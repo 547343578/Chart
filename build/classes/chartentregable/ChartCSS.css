@@ -1,0 +1,91 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2020-4-11, 22:22:25
+    Author     : 王竹青
+*/
+.root{
+    -fx-background-color: white;
+}
+
+ .default-color0.chart-bar {-fx-bar-fill : cornflowerblue}
+ .default-color0.chart-series-line {-fx-stroke: cornflowerblue}
+
+ #okb{
+     -fx-text-fill: cornflowerblue;
+      
+ }
+ .label{
+    -fx-text-fill:black;
+    -fx-font-size:8pt;
+
+}
+ #okb2{
+       -fx-font-size:24pt;
+    -fx-text-fill: cornflowerblue; 
+    -fx-font-weight:bold;    
+ }
+ 
+ .button{
+    -fx-text-fill: cornflowerblue;
+    -fx-font-weight:bold; 
+    -fx-text-alignment: center;
+    -fx-background-color: -fx-shadow-highlight-color, -fx-outer-border, -fx-inner-border, -fx-body-color;
+    -fx-background-insets: 0 0 -1 0, 0, 1, 2;
+    -fx-background-radius: 3px, 3px, 2px, 1px;
+    -fx-padding: 0.333333em 0.666667em 0.333333em 0.666667em;
+    -fx-alignment: CENTER;
+    -fx-content-display: LEFT;
+}
+.chart-plot-background{
+    -fx-background-color: white;
+}
+ 
+.tool-bar { 
+    -TOP-COLOR: ladder(
+        -fx-base,
+        derive(-fx-base,0%) 0%,
+        derive(-fx-base,46%) 100%
+    );
+    -fx-background-color:
+        linear-gradient(to bottom, derive(TOP-COLOR,25%) 0%, -fx-outer-border 90%),
+        linear-gradient(to bottom, TOP-COLOR 2%, derive(-fx-base,-2.1%) 95%);
+    -fx-background-insets: 0 0 0 0, 1 0 1 0;
+    -fx-padding: 0.416667em 0.5em 0.416667em 0.5em;
+    -fx-spacing: 0.333em; 
+    -fx-alignment: CENTER_LEFT;
+}
+.chart{
+    -fx-background-color: white;
+}
+.chart-pie-label{
+    -fx-fill:black;
+}
+.chart-pie-label-line{
+    -fx-stroke:whitesmoke;
+    -fx-fill: whitesmoke;
+}
+.axis {
+    -AXIS_COLOR: derive(-fx-background,-20%);
+    -fx-tick-label-font-size: 0.833333em;
+    -fx-tick-label-fill: derive(-fx-text-background-color, 30%);
+}
+.chart-vertical-grid-lines {
+    -fx-stroke: derive(-fx-background,-10%);
+
+}
+.chart-horizontal-grid-lines {
+    -fx-stroke: derive(-fx-background,-10%);
+
+}
+.chart-alternative-row-fill {
+    -fx-fill: null;
+    -fx-stroke: null;
+}
+.chart-pie-label-line{
+      -fx-stroke: derive(-fx-background,-20%);
+      -fx-fill:derive(-fx-background,-20%);
+}

@@ -1,0 +1,76 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2020-4-12, 0:00:55
+    Author     : 王竹青
+*/
+.default-color0.chart-series-line {-fx-stroke: darkorange}
+
+.root{
+    -fx-background-color: black;
+}
+
+#okb2{
+    -fx-font-size:24pt;
+    -fx-text-fill: darkorange; 
+    -fx-font-weight:bold;
+}
+
+.label{
+   
+    -fx-font-size:8pt;
+}
+
+#okb {
+   -fx-text-fill: darkorange;
+}
+
+.tool-bar{
+    -fx-background-color: dimgrey;
+}
+
+.button{
+    -fx-background-color: grey;
+    -fx-text-fill: darkorange;
+}
+
+.chart{
+    -fx-background-color: black;
+}
+
+.chart-pie-label{
+    -fx-fill:darkorange;
+}
+
+.chart-pie-label-line{
+    -fx-stroke:darkorange;
+    -fx-fill: darkorange;
+}
+
+.axis{
+    -fx-tick-label-fill: darkorange;
+}
+.axis-label{
+    -fx-text-fill: darkorange;
+}
+.default-color0.chart-bar{
+    -fx-bar-fill:darkorange;
+}
+
+.chart-plot-background{
+    -fx-background-color: dimgrey;
+}
+.chart-vertical-grid-lines{
+    -fx-stroke: darkorange;
+}
+.chart-horizontal-grid-lines{
+    -fx-stroke: darkorange;
+}
+.chart-alternative-row-fill{
+    -fx-fill: black;
+    -fx-stroke: transparent;
+    -fx-stroke-width: 0;
+}

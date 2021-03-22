@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+
+<AnchorPane id="AnchorPane" fx:id="anchorPane" prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="chartentregable.ChartFXMLController">
+   <children>
+      <ToolBar layoutX="14.0" layoutY="8.0" prefHeight="40.0" prefWidth="200.0" AnchorPane.bottomAnchor="560.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <items>
+            <Button id="okb" fx:id="bar2" mnemonicParsing="false" onMouseClicked="#barClicked">
+               <graphic>
+                  <ImageView fx:id="barButton" fitHeight="30.0" fitWidth="40.0" onMouseClicked="#barClicked" pickOnBounds="true" preserveRatio="true" />
+               </graphic>
+            </Button>
+            <Button id="okb" fx:id="line2" mnemonicParsing="false" onMouseClicked="#lineClicked">
+               <graphic>
+                  <ImageView fx:id="lineButton" fitHeight="30.0" fitWidth="40.0" onMouseClicked="#lineClicked" pickOnBounds="true" preserveRatio="true" />
+               </graphic>
+            </Button>
+            <Button id="okb" fx:id="constrast2" mnemonicParsing="false" onMouseClicked="#contrastClicked">
+               <graphic>
+                  <ImageView fx:id="brightButton" fitHeight="30.0" fitWidth="40.0" onMouseClicked="#contrastClicked" pickOnBounds="true" preserveRatio="true" />
+               </graphic>
+            </Button>
+         </items>
+      </ToolBar>
+      <PieChart fx:id="pieChart" layoutX="14.0" layoutY="89.0" prefHeight="220.0" prefWidth="520.0" AnchorPane.bottomAnchor="299.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="16.0" AnchorPane.topAnchor="89.0" />
+      <StackPane layoutX="105.0" layoutY="300.0" prefHeight="150.0" prefWidth="200.0" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="300.0">
+         <children>
+            <LineChart fx:id="lineChart">
+              <xAxis>
+                <CategoryAxis side="BOTTOM" />
+              </xAxis>
+              <yAxis>
+                <NumberAxis side="LEFT" />
+              </yAxis>
+            </LineChart>
+            <BarChart id="okb" fx:id="barChart" prefHeight="235.0" prefWidth="550.0">
+              <xAxis>
+                <CategoryAxis side="BOTTOM" />
+              </xAxis>
+              <yAxis>
+                <NumberAxis side="LEFT" />
+              </yAxis>
+            </BarChart>
+         </children>
+      </StackPane>
+      <HBox layoutX="21.0" layoutY="560.0" prefHeight="51.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="550.0">
+         <children>
+            <Button id="okb" fx:id="Suspendido" mnemonicParsing="false" onMouseClicked="#SuspensoClicked" prefHeight="30.0" prefWidth="100.0" text="Suspenso">
+               <HBox.margin>
+                  <Insets left="10.0" right="10.0" top="10.0" />
+               </HBox.margin>
+            </Button>
+            <Button id="okb" fx:id="Aprobado" mnemonicParsing="false" onMouseClicked="#AprobadoClicked" prefHeight="30.0" prefWidth="100.0" text="Aprobado">
+               <HBox.margin>
+                  <Insets left="10.0" right="10.0" top="10.0" />
+               </HBox.margin>
+            </Button>
+            <Button id="okb" fx:id="Bien" mnemonicParsing="false" onMouseClicked="#BienClicked" prefHeight="30.0" prefWidth="100.0" text="Bien">
+               <HBox.margin>
+                  <Insets left="10.0" right="10.0" top="10.0" />
+               </HBox.margin>
+            </Button>
+            <Button id="okb" fx:id="Notable" mnemonicParsing="false" onMouseClicked="#NotableClicked" prefHeight="30.0" prefWidth="100.0" text="Notable">
+               <HBox.margin>
+                  <Insets left="10.0" right="10.0" top="10.0" />
+               </HBox.margin>
+            </Button>
+            <Button id="okb" fx:id="Sobresaliente" mnemonicParsing="false" onMouseClicked="#SobresalienteClicked" prefHeight="30.0" prefWidth="100.0" text="Sobresaliente">
+               <HBox.margin>
+                  <Insets left="10.0" right="10.0" top="10.0" />
+               </HBox.margin>
+            </Button>
+         </children></HBox>
+      <Label id="okb2" layoutX="210.0" layoutY="65.0" text="Notas IPC" />
+   </children>
+</AnchorPane>
